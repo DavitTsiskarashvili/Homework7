@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
             val inflater = LayoutInflater.from(this)
 
             if (check) {
-                val addNumeric = inflater.inflate(R.layout.edittext_number, binding.root, false)
+                val addNumeric = inflater.inflate(R.layout.edittext_number, binding.mainLayout, false)
                 binding.mainLayout.addView(addNumeric)
             } else {
-                val addText = inflater.inflate(R.layout.edittext_text, binding.root, false)
+                val addText = inflater.inflate(R.layout.edittext_text, binding.mainLayout, false)
                 binding.mainLayout.addView(addText)
             }
         }
